@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="container">
+
+    <header class="header">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" class="form-control" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label">Age (optional) </label>
+        <input id="number" type="number" min="18" max="60" class="form-control" placeholder="Age" />
+      </div>
+
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        
+        <select name="roles" id="dropdown" class="form-control">
+            <option disabled selected value>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definite"><input type="radio" id="definite" name="recommed" value="definitely" />Definitely</label>
+        <label for="maybe"><input type="radio" id="maybe" name="recommed" value="maybe" />Maybe</label>
+        <label for="notsure"><input type="radio" id="notsure" name="recommed" value="notsure" />Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <label id="dropdown-label">What is your favorite feature of freeCodeCamp?</label>
+        
+        <select class="form-control" id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="Challenges">Challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label><input type="checkbox" id="improve" value="improvements" />Front-end Projects</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Back-end Projects</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Data Visualization</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Challanges</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Open Source Community</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Gitter help rooms</label>
+        <label for="improve"> <input type="checkbox" id="improve" value="improvements" />Videos</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />City Meetups</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Wiki</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Forum</label>
+        <label for="improve"><input type="checkbox" id="improve" value="improvements" />Additional Courses</label>
+      </div>
+
+      <div class="form-group">
+        <label>Any comments or suggestions?</label>
+        <textarea class="form-control" placeholder="Enter your comment here..."> </textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
